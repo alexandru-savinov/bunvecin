@@ -1,56 +1,84 @@
 # bunvecin
 
-Unelte pentru o asociație de proprietari, făcute ca să poată fi luate și
-folosite de oricine — fără noi, fără server, fără abonament.
+Un pachet de soluții **gata făcute**, alese și configurate pentru o asociație de
+proprietari. Nu scriem programe noi decât acolo unde nu există nimic potrivit.
 
-Proiectul are un scop lung, spus de la început: **să împărtășim felul corect de
-a face lucrurile.** Nu o platformă care să administreze asociații. Nu un serviciu
-la care te abonezi. Niște unelte mici, fiecare cu o treabă, care pot fi citite,
-verificate și refuzate.
+Alegerea **este** produsul. Ca la un meniu omakase: altcineva a făcut alegerile,
+tu pornești din viziunea lui în loc să pornești de la pagină albă. Poți schimba
+orice — totul e configurație, la vedere — dar nu trebuie să alegi tu de la zero.
+
+Se face **întâi pentru asociația noastră**, concret, cu probleme reale. Dacă
+folosește și altcuiva, cu atât mai bine. Scopul lung, spus de la început: **să
+împărtășim felul corect de a face lucrurile.**
 
 ## Trei reguli care decid restul
 
 **1. Datele personale nu au voie. Prin construcție, nu prin promisiune.**
 Nici un nume, nici un apartament, nici o sumă individuală, nici un IDNP, nici un
-număr de telefon — nicăieri în ce se publică. Nu e o regulă de bună purtare, e un
-pas mecanic care oprește documentul. O unealtă de aici trebuie să poată spune
-**nu**, iar refuzul ei nu are portiță: nu există flag de forțare, nicăieri.
+telefon — nicăieri în ce se publică. Nu e o regulă de bună purtare, e un pas
+mecanic care oprește documentul. Ce intră în pachet trebuie să poată spune **nu**,
+iar refuzul nu are portiță: niciun flag de forțare, nicăieri.
 
 **2. Configurația e publică.**
-Cum se calculează, ce categorii există, ce intră și ce nu — toate stau la vedere,
-într-un fișier pe care oricine îl poate citi. Dacă o regulă nu suportă să fie
+Cum se calculează, ce categorii există, ce intră și ce nu, ce unealtă a fost
+aleasă și **de ce** — toate stau la vedere. Dacă o regulă nu suportă să fie
 văzută, nu e o regulă bună.
 
 **3. Asociațiile și oamenii sunt foarte diferiți.**
-Vorba lui Alexandru, 26 august 2026, și e o constrângere de proiectare, nu o
-politețe. Intrarea e liberă — fiecare asociație își ține evidența cum vrea și cum
-poate. Miezul e fix: un singur adevăr, multe uși. Nu dictăm nimănui cum să-și țină
-socotelile.
+Vorba lui Alexandru, 26 august 2026 — o constrângere de proiectare, nu o
+politețe. Intrarea e liberă: fiecare asociație își ține evidența cum poate.
+Miezul e fix: un singur adevăr, multe uși.
+
+## Cum se alege ce intră
+
+O soluție intră în pachet doar dacă trece **toate** cele de mai jos. Motivul
+fiecărei alegeri se scrie — o alegere fără motiv scris nu e o alegere, e un
+obicei.
+
+- **Există deja.** Reutilizarea bate construcția. Scriem cod nou doar când n-am
+  găsit nimic care să facă treaba fără să încalce regula 1.
+- **Nu cere date personale** ca să funcționeze.
+- **Poate fi luată și dusă mai departe** — fără abonament la noi, fără server al
+  nostru, fără permisiunea noastră.
+- **Costă cât suportă o asociație**, adică de obicei nimic.
+- **Poate fi refuzată.** Dacă o parte nu ți se potrivește, o scoți și pachetul
+  merge mai departe.
 
 ## Ce e înăuntru
 
-Deocamdată nimic în afară de aceste rânduri și licența. Prima unealtă —
-**banii la vedere**, documentul lunar cu banii asociației, agregat și public,
-trecut printr-o poartă care poate refuza — trăiește azi în propriul ei depozit și
-încă așteaptă pasul zero: aprobarea consiliului asociației. Nu se mută aici până
-nu e limpede că locul ei e aici.
+Se strânge acum, din nevoi reale. Prima piesă scrisă de la zero e **banii la
+vedere** — documentul lunar cu banii asociației, agregat și public, trecut printr-o
+poartă care poate refuza — și a fost scrisă tocmai fiindcă n-am găsit nimic gata
+care să facă asta fără să atingă datele oamenilor. Trăiește azi în propriul depozit
+și așteaptă pasul zero: aprobarea consiliului asociației.
 
-## De ce AGPL
+## Pentru cine NU e
 
-Codul e sub **GNU AGPL v3 sau ulterioară**. Motivul e o singură clauză: §13,
-interacțiunea prin rețea. Astăzi uneltele astea nu sunt un serviciu — rulează
-local și scot un document. Dar dacă vreodată cineva le găzduiește pentru mai multe
-asociații, AGPL îl obligă să publice ce a schimbat. Exact asta ceream și de la
-configurație: dacă nu suportă să fie văzut, nu e bun.
+- Dacă vrei să alegi singur fiecare bucată, alegerile de aici o să te încurce.
+- Dacă vrei un serviciu la care te abonezi și cineva îți administrează asociația,
+  nu e locul: aici nu există „la noi pe server".
+- Dacă ai nevoie de date pe apartament în ce se publică, regula 1 te oprește, și
+  n-o să se schimbe.
 
-Ce **nu** face licența, ca să nu ne mințim: nu apără datele nimănui. O licență nu
-oprește pe nimeni să colecteze ce n-ar trebui. Asta o face regula 1, în cod, prin
-poarta care refuză — nu textul de aici.
+## Unde se discută
+
+Aici, la vedere: **Issues** pentru ce lipsește sau ce e stricat, **Discussions**
+pentru cum ar trebui să arate. Îmbunătățirile se întorc prin **Pull Requests** —
+asta e bucla, și e deschisă din prima zi.
+
+## Licența
+
+Codul: **GNU AGPL v3 sau ulterioară**. Motivul e o singură clauză — §13,
+interacțiunea prin rețea. Azi nimic de aici nu e un serviciu; rulează local și
+scoate un document. Dar dacă cineva găzduiește vreodată pachetul pentru mai multe
+asociații, AGPL îl obligă să publice ce a schimbat. Aceeași cerință ca la regula 2.
+
+Ce **nu** face licența, ca să nu ne mințim: nu apără datele nimănui. Asta o face
+regula 1, în cod, prin poarta care refuză.
 
 **Documentele** (specificații, ghiduri, șabloane, textul documentului lunar) sunt
-gândite să fie copiate liber de orice asociație, fără obligațiile AGPL. Vezi
-`LICENSE` pentru cod; pentru documente, forma exactă rămâne de fixat — până
-atunci, se pot copia și adapta liber.
+gândite să fie copiate liber de orice asociație, fără obligațiile AGPL. Forma
+exactă rămâne de fixat; până atunci, se pot copia și adapta liber.
 
 ---
 
